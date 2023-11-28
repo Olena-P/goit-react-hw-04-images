@@ -37,8 +37,12 @@ const App = () => {
   }, [query, page]);
 
   useEffect(() => {
+    if (query.trim() === "") {
+      return;
+    }
+
     fetchImages();
-  }, [fetchImages]);
+  }, [fetchImages, query, page]);
 
   const handleSearchSubmit = (newQuery) => {
     setQuery(newQuery);

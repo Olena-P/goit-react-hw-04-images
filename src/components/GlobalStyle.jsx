@@ -50,7 +50,7 @@ export const GlobalStyle = createGlobalStyle`
        * Стили компонента Searchbar
        */
       
-      .Searchbar {
+      .SearchBar {
         top: 0;
         left: 0;
         position: sticky;
